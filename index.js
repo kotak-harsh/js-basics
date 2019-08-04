@@ -1,17 +1,6 @@
-// Comments are text that will not be executed in your code. Rather comments are for other programmers to read. 
-// Single line comments start with //
-/* Multiple line comments start with*/ /* and end with */ 
-
-/* All of the exercises below are commented out. Write your Javascript code after each exercise. */
-
-
 /* Variables and Data Types */
 /*Console.log each variable and test your code in the terminal using the Node REPL*/
 
-/*i.e.*/
-
-var pet = "sebastian the pug";
-console.log(pet);  // <= this should print out sebastian the pug
 
 /*
 * #1
@@ -22,12 +11,18 @@ console.log(pet);  // <= this should print out sebastian the pug
 * Assign your own string values to each variable and console.log each variable.
 */
 
-var firstName = 'Vic';
-console.log(firstName);
+let firstName = "Harsh";
+let lastName = "Kotak";
+let birthPlace = "India";
+let favFood = "Sushi";
+let favDrink = "Cofee";
+let favSong = "Pray";
+let favAnimal = "Dog";
+let favColor = "Black";
+let favSport = "Football";
+let favDoughnut = "Chocolate";
 
-var lastName = 'Lee';
-console.log(lastName)
-
+console.log(firstName, lastName);
 
 /*
 * #2
@@ -37,7 +32,15 @@ console.log(lastName)
 *
 * Assign your own number values to each variable and console.log each variable.
 */
+let favNumber = 6;
+let yourShoeSize = 10;
+let thatOnePrinceSong = 1999;
+let floorsAlaMoanaHotel = 38;
+let numOfJapanPrefectures = 47;
+let numOfABCstoresinHi = 73;
+let cheesecakesFlavAtCheeseCakeFac = 34;
 
+console.log(favNumber, yourShoeSize);
 
 /*
 * #3
@@ -54,26 +57,35 @@ console.log(lastName)
 *
 */
 
+let likesMcDonalds = true;
+let eatsDoughnuts = false;
+let ownsRedShoes = false;
+let isSexy = true;
+
 //For example:
 //Make me True:
-var booya1 = 3 > 2; 
+var booya1 = 3 > 2;
 console.log(booya1);
 
 //Make me False:
-var booya2;
+var booya2 = 2 > 3;
+console.log(booya2);
 
 //Make me True:
-var booya3;
+var booya3 = 'hello' === 'hello';
+console.log(booya3);
 
 //Make me False:
-var booya4;
+var booya4 = 3 !== 3;
+console.log(booya4);
 
 //Make me True:
-var booya5; 
+var booya5 = 5 >= 5;
+console.log(booya5);
 
 //Make me False:
-var booya6;
-
+var booya6 = 4 <= 3;
+console.log(booya6);
 
 /*
 * #4
@@ -83,7 +95,14 @@ var booya6;
 *
 * Assign a null value to each variable and console.log each variable. 
 */
+let completedPrepClass = null;
+console.log(completedPrepClass);
 
+let traveledToMars = null;
+console.log(traveledToMars);
+
+let buyVicADrink = null;
+console.log(buyVicADrink);
 
 /*
 * #5
@@ -93,7 +112,10 @@ var booya6;
 *
 * Do not assign a value to the variable and console.log each variable.
 */
-
+let superBowlChamps;
+let nextPres;
+let hawaiiRail;
+console.log(superBowlChamps, nextPres, hawaiiRail);
 
 /*
 * #6
@@ -109,6 +131,28 @@ var booya6;
 * Console.log each variable.
 */
 
+let plateLunch = ['chicken', 'steak', 'shirmp', 'pizza', 'pork'];
+console.log(plateLunch);
+
+let donutBox = ['choco', 'vanilla', 'strawberry', 'cream', 'jelly'];
+console.log(donutBox);
+
+let westCoast = ['california', 'nevada', 'washington'];
+console.log(westCoast);
+
+let lotteryResult = [3, 4, 5, 6, 7];
+console.log(lotteryResult);
+
+let hamajang = ['string', 5, true, ['array'], { object: 'object' }, null, undefined];
+console.log(hamajang);
+
+let dynamicDuos = [
+  ['tequila'],
+  ['vodka'],
+  ['gin']
+]
+console.log(dynamicDuos);
+
 
 //*7
 //Accessing values in Arrays
@@ -119,6 +163,11 @@ var partyList = ["carrot cake", "gin & tonic", "kalua pork nachos", "double stuf
 // Console.log the length of this array.
 // Console.log only "carrot cake" from this array.
 // Console.log only "cool ranch doritos" from this array
+console.log('partyList:', partyList);
+console.log('arrLength:', partyList.length);
+console.log('onlyCarrotCake:', partyList[0]);
+console.log('onlyDoritos:', partyList[4]);
+
 
 /*
 * #8 
@@ -131,6 +180,8 @@ var partyList = ["carrot cake", "gin & tonic", "kalua pork nachos", "double stuf
 *
 * i.e "Hi my name is Bruce Wayne and I was born in Gotham."
 */
+const fullName = firstName + " " + lastName;
+console.log("Hi my name is " + fullName + " and I was born in " + birthPlace + ".");
 
 
 /*
@@ -148,6 +199,26 @@ var partyList = ["carrot cake", "gin & tonic", "kalua pork nachos", "double stuf
 *
 * Console.log each new variable.
 */
+let num1 = 1;
+console.log('num1:', num1);
+let num2 = 2;
+console.log('num2:', num2);
+
+const sum = num1 + num2;
+console.log('sum:', sum);
+
+const difference = num1 - num2;
+console.log('difference:', difference);
+
+const product = num1 * num2;
+console.log('product:', product);
+
+const quotient = num1 / num2;
+console.log('quotient:', quotient);
+
+const leftOver = num1 % num2;
+console.log('leftover(modulus):', leftOver);
+
 
 
 /*
@@ -162,7 +233,16 @@ var partyList = ["carrot cake", "gin & tonic", "kalua pork nachos", "double stuf
 * Declare another variable named `sameNumba` and compare a string "5" and a number 5 using equality.
 * Console.log the variables. Do you see the difference between strict equality vs. equality?
 */
+let isStrictlyEqual = "Tacocat" === "tacocat";
+let isLooselyEqual = "Tacocat" == 'tacocat';
 
+let sameNum = "5" === 5;
+let sameNumba = "5" == 5;
+console.log(isStrictlyEqual);
+console.log(isLooselyEqual);
+console.log(sameNum, sameNumba);
+console.log(5);
+console.log("5");
 
 /* 
 * #11
@@ -171,16 +251,20 @@ var partyList = ["carrot cake", "gin & tonic", "kalua pork nachos", "double stuf
 */
 
 //Use && to make me True
-var booya7;
+var booya7 = 'a' === 'a' && 5 > 3;
+console.log(booya7);
 
 //Use && to make me False
-var booya8;
+var booya8 = 5 > 3 && 3 > 7;
+console.log(booya8);
 
 //Use || to make me True
-var booya9;
+var booya9 = 3 > 2 || 2 < 1;
+console.log(booya9);
 
 //Use || to make me False
-var booya10;
+var booya10 = 5 < 2 || 3 < 1;
+console.log(booya10);
 
 //Console.log each variable
 
@@ -191,61 +275,90 @@ var booya10;
 * Variables with the outcome of an assignment operation (+=, -=, *=, /=, %=):
 *
 * Declare a variable named `myNum` and assign it with a number of your choosing.
-* 
+*
 * Change the value of the muNum variable by using the assignment operators and console.log myNum after each assignment.
 */
-
+let myNum = 10;
 
 
 //increment and assign 3 (+=):
+myNum += 3;
+console.log('10 += 3: ', myNum);
 
 //decrement and assign 1 (-=):
+myNum -= 1;
+console.log('10 -= 1:', myNum);
 
 //multiple and assign 2 (*=);
+myNum *= 2;
+console.log('10 *= 2:', myNum);
 
 //divide and assign 5 (/=);
+myNum /= 5;
+console.log('10 /= 5:', myNum);
 
 //modulo and assign 4 (%=);
+myNum %= 4;
+console.log('10 %= 4:', myNum);
 
 
 /*===================================================================*/
 
 /*
-* Final Boss 
+* Final Boss
 
 * The following exercises are designed to further challenge you and give you a jump start on the next topic that'll be covered. Let the boss battle begin!
 *
 * Function - A block of code designed to perform a particular task. It allows you to reuse code.
 *
 * Declare a function named bakePie which has a single parameter ingredient.
-* 
+*
 * When the function is invoked, it should return a string, "Today's special is ingredient pie." Where ingredient will be the value that you pass into the function.
-* 
+*
 * For example, if the value is `blueberry`, it should return "Today's special is blueberry pie."
-* 
+*
 * Declare a variable pieResult and assign it to the function call.
 * Console.log the variable to see the result.*/
 
+function bakePie(ingredient) {
+  return "Today's special is " + ingredient + " pie.";
+}
+
+let pieResult = bakePie('blueberry');
+console.log(pieResult);
 
 /*
 * Declare a Function named jump which has a single parameter, height.
-* 
+*
 * This function should return a string, "You jumped height feet high!" Where height will be the value that you pass into the function.
-* 
+*
 * For example, if the value is 9, it should return "You jumped 9 feet high!"
 
 * Declare a variable jumpResult and assign it to the function call.
 * Console.log the variable to see the result.
 */
 
+function jump(height) {
+  return "You jumped " + height + " feet high!";
+}
+
+let jumpResult = jump(9);
+console.log(jumpResult);;
+
 
 /*
 * Declare a Function named makeFood which takes three parameters, ingredient1, ingredient2, recipeName.
-* 
+*
 * This function should return a string ingredient1 and ingredient2 make a recipeName. Where ingredient1, ingredient2 and recipeName will be the values that you pass into the function.
-* 
+*
 * For example, if the values are "Cheese", "Bacon", "pancake" it should return "Cheese and bacon make a pancake."
 *
 * Declare a variable foodResult and assign it to the function call. Console.log the variable to see the result.
 */
 
+let makeFood = (ingredient1, ingredient2, recipeName) => {
+  return ingredient1 + " and " + ingredient2 + " make " + recipeName + ".";
+}
+
+let foodResult = makeFood('spam', 'rice', 'musubi');
+console.log(foodResult);
